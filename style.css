@@ -1,0 +1,127 @@
+:root {
+  --rose-800:#7A284E;
+  --rose-50: #FFF7FB;
+  --stone-900: #312E2C;
+  --stone-600: #5F564D;
+  --stone-150: #E3DDD7;
+  --stone-100: #F3E5D7;
+  --brown-800: #854632;
+  --white: #FFFFFF;
+
+  --text-1-family-style: 'Young Serif';
+  --text-1-font-size: 40px;
+  --text-1-line-height: 100%;
+  --text-1-letter-spacing: 0px;
+  --text-1-font-weight: 400;
+  
+  --text-2-family-style: 'Young Serif';
+  --text-2-font-size: 28px;
+  --text-2-line-height: 100%;
+  --text-2-letter-spacing: 0px;
+  --text-2-font-weight: 400;
+
+  --text-3-family-style: 'Outfit';
+  --text-3-font-size: 20px;
+  --text-3-line-height: 100%;
+  --text-3-letter-spacing: 0px;
+  --text-3-font-weight: 600;
+
+  --text-4-family-style: 'Outfit';
+  --text-4-font-size: 16px;
+  --text-4-line-height: 150%;
+  --text-4-letter-spacing: 0px;
+  --text-4-font-weight: 500;
+
+  --text-5-family-style: 'Outfit';
+  --text-5-font-size: 16px;
+  --text-5-line-height: 150%;
+  --text-5-letter-spacing: 0px;
+  --text-5-font-weight: 700;
+
+  --spacing-1600: 128px;
+  --spacing-600: 48px;
+  --spacing-500: 40px;
+  --spacing-400: 32px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+}
+
+@media (max-width:1440px) {
+  .card-container {
+    width:736px;
+  }
+}
+
+@media (max-width:768px) {
+  .card-container {
+  width:616px;}
+}
+
+@media (max-width:375px) {
+  .card-container {
+  width:100%;}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--stone-100);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.card-container {
+  background-color: var(--white);
+  max-width: 736px;
+  display: flex;
+  padding: 40px;
+  width:100%;
+  gap:40px;
+  flex-direction: column;
+  border-radius:14px;
+}
+
+.image-container {
+  width:100%;  
+  display:block;
+  border-radius: 12px;
+}
+
+.receipt-container {
+  gap: 32px;
+}
+
+
+.title {
+  margin: 0;
+  font: var(--text-1-font-weight) 
+  var(--text-1-font-size)
+  /var(--text-1-line-height) 
+  var(--text-1-family-style);
+}
+
+
+.description {
+  font-family: var(--text-4-family-style);
+}
+
+h2 {
+  margin: 0;
+}
+
+.preparation-time {
+  background-color: var(--rose-50);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 0;
+}
+
+.preparation-time ul{
+  margin: 0;
+}
